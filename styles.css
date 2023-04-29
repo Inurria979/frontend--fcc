@@ -1,0 +1,75 @@
+/* resetear estilos por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilo para todo el cuerpo de la página */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #796d6d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* estilo para los botones */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #98b0c9;
+    cursor: pointer;
+    margin: 10px;
+}
+
+/* estilo para el input y label */
+label {
+    display: block;
+    margin: 10px;
+}
+
+input {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    margin: 10px;
+    width: 200px;
+}
+
+/* estilo para el título */
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* estilo para el botón de "Connect" */
+#connectButton {
+    background-color: #000000;
+}
+
+/* estilo para el botón de "getBalance" */
+#balanceButton {
+    background-color: #000000;
+}
+
+/* estilo para el botón de "withdraw" */
+#withdrawButton {
+    background-color: #000000;
+}
+
+/* estilo para el botón de "Fund" */
+#fundButton {
+    background-color: #000000;
+}

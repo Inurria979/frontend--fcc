@@ -21,7 +21,8 @@ withdrawButton.onclick = withdraw
 async function connect() {
   if (typeof window.ethereum !== "undefined") {
     await window.ethereum.request({ method: "eth_requestAccounts" })
-    connectButton.innerHTML = "Connected!"
+    connectButton.innerHTML = "Conectado!"
+    alert("Conectado")
   } else {
     connectButton.innerHTML = "Please install metamask"
   }
@@ -46,6 +47,7 @@ async function fund() {
       //listen for the tx tp be mined
       //listen for an event <- we have not learned about yet
       await listenForTransactionMine(transactionResponse, provider)
+      alert("Transación finalizada")
       console.log("Done!")
     } catch (error) {
       console.log(error)
@@ -58,6 +60,7 @@ async function getBalance() {
     const provider = new ethers.providers.Web3Provider(window.ethereum)
     const balance = await provider.getBalance(contractAddress)
     console.log("The balance is", ethers.utils.formatEther(balance))
+    alert(`El balance es ${ethers.utils.formatEther(balance)} `)
   }
 }
 //withdraw
@@ -70,6 +73,7 @@ async function withdraw() {
     try{
         const transacitionResponse = await contract.withdraw()
         await listenForTransactionMine(transacitionResponse, provider)
+        alert("Transacion Realizada")
     }catch(error){
         console.log(error)
     }
