@@ -1,2 +1,2 @@
 1 HTML / JavaScript
-Later on, we will use NextJS / Reactjsf
+Later on, we will use NextJS / Reactjs
